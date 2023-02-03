@@ -1,7 +1,10 @@
+import java.util.Scanner;
+
 public class Patient {
     private String firstName;
     private String lastName;
-    private String PESEL;   // dodac ograniczenie znakow do 11
+    private String PESEL;
+    Scanner sc = new Scanner(System.in);
 
     public Patient(String firstName,String lastName,String PESEL){
         this.firstName=firstName;
@@ -34,6 +37,10 @@ public class Patient {
     }
     public String getInfoPatient(){
         return getFirstName() +" "+ getLastName()+ " "+ getPESEL();
-
+    }
+    public Patient(){
+        setFirstName(sc.nextLine());
+        setLastName(sc.nextLine());
+        setPESEL(sc.nextLine());
     }
 }

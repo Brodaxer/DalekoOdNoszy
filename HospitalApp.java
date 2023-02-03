@@ -1,11 +1,16 @@
+import java.util.Scanner;
+
 public class HospitalApp {
     public static void main(String[] args) {
-        Hospital hps= new Hospital();
-        Patient pa1= new Patient("JAn","kal","fafaf");
-        Patient pa2= new Patient("JAn","kal","fafaf");
-
-        hps.addPatient(pa1);
-        hps.addPatient(pa2);
-        hps.printPatients();
+        Scanner sc = new Scanner(System.in);
+        Hospital hps = new Hospital();
+        do {
+            switch (sc.nextInt()) {
+                case 0 -> System.out.println("papa");
+                case 1 -> hps.addPatient();
+                case 2 -> hps.printPatients();
+            }
+        } while (sc.nextInt() != 0);
+        sc.close();
     }
 }
