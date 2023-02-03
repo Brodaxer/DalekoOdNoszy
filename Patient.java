@@ -1,7 +1,7 @@
 public class Patient {
     private String firstName;
     private String lastName;
-    private String PESEL;
+    private String PESEL;   // dodac ograniczenie znakow do 11
 
     public Patient(String firstName,String lastName,String PESEL){
         this.firstName=firstName;

@@ -6,7 +6,7 @@ public class Hospital {
     public void addPatient(Patient patient) {
         patients[currPatients] = new Patient(patient.getFirstName(), patient.getLastName(), patient.getPESEL());
         currPatients++;
-    }
+    }                               // dodac ograniczenie max pacjentow
 
     public void printPatients() {
         for (int i = 0; i < currPatients; i++) {
