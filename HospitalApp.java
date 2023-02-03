@@ -15,13 +15,3 @@ public class HospitalApp {
         sc.close();
     }
 }
-//              halp za duzo skanera ?
-
-
-//
-//Exception in thread "main" java.util.InputMismatchException
-//        at java.base/java.util.Scanner.throwFor(Scanner.java:943)
-//        at java.base/java.util.Scanner.next(Scanner.java:1598)
-//        at java.base/java.util.Scanner.nextInt(Scanner.java:2263)
-//        at java.base/java.util.Scanner.nextInt(Scanner.java:2217)
-//        at HospitalApp.main(HospitalApp.java:8)
